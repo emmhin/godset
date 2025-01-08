@@ -1,0 +1,440 @@
+* {
+    font-family: "Strait", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    box-sizing: border-box;
+}
+
+select, input, textarea {
+    color: black;
+}
+
+h1 {
+    font-size: 18vw;
+    margin: 0;
+}
+
+h2 {
+    font-size: 13vw;
+    margin: 0;
+}
+
+h3 {
+    font-size: 7vw;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+section.hero {
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bubble h4 {
+    font-weight: bold;
+}
+
+.text-bubble p {
+    word-wrap: break-word;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+body:has(.show) {
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    aspect-ratio: 39/25;
+    background-color: #232323;
+}
+
+#johnni {
+    right: 0%;
+    bottom: 0;
+    width: auto;
+    height: 115%;
+    transform: translate(12%,18.7%);
+}
+
+#hero-button {
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 4vw;
+}
+
+#hero-text {
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+}
+
+#gun-list img {
+    height: auto;
+    width: 100%;
+}
+
+.sponsor-banner img {
+    height: auto;
+    width: 90%;
+}
+
+.sponsor-banner .row img {
+    height: auto;
+    width: 25%
+}
+
+.sponsor-banner h3 {
+    font-size: 5.5vw;
+}
+
+#kolding-esport-logo {
+    height: auto;
+    width: 100%;
+}
+
+#middelfart-esport-logo {
+    height: auto;
+    width: 100%;
+}
+
+.text-e-sport h3 {
+    font-size: 5.5vw;
+}
+
+td {
+    padding: 24px;
+}
+
+dialog > .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+dialog .card-img {
+    height: 100px;
+    width: auto;
+    aspect-ratio: 1.0;
+    border-radius: 10px;
+}
+
+dialog {
+    width: 90%;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #DD7814;
+    z-index: 2;
+}
+
+
+
+.text-bubble {
+    border-radius: 15px;
+    background-color: rgba(238, 238, 238, 0.53);
+    padding: 8px;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input::placeholder {
+    color: black;
+}
+
+nav ul > li {
+    list-style-type: none;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+li.parent-list-item {
+    position: relative;
+}
+
+li.parent-list-item > ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+    padding: 16px;
+    list-style-type: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+
+li.parent-list-item:hover > ul {
+    display: flex;
+}
+
+.button-small {
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.flex {
+    flex: 1;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    color: white;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+#bars {
+    font-size: 36px;
+}
+
+#toggle {
+    font-size: 32px;
+}
+
+#cart {
+    font-size: 24px;
+}
+
+header nav:not(.show) > ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 54px;
+    margin-right: 32px;
+}
+
+header nav:not(.show) > ul > li {
+    height: 100%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    border-radius: 10px;
+    resize: none;
+    padding: 8px;
+}
+
+button {
+    border: none;
+    padding: 12px;
+    background-color: rgba(50, 250, 50, 0.78);
+    color: white;
+}
+
+.logo {
+    width: 100px;
+}
+
+.show {
+    background-color: black;
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    z-index: 2;
+    padding: 32px;
+}
+
+.show ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    font-size: 36px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.show ul > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-field {
+    display: none;
+}
+
+.show-search {
+    display: block;
+}
+
+@media screen and (max-width: 799px) {
+    header > nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    header > .fa-bars {
+        display: none;
+    }
+    header ul {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 8px;
+    border-radius: 10px;
+}
+
+.logo-card div.absolute {
+    height: 72%;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.avatar {
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.avatar > img, .avatar-small > img {
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-small {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 64px;
+    width: 64px;
+}
+
+.float-right {
+    float: right;
+}
+
+.grå {
+    background-color: lightgrey;
+}
+
+.text-white {
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap-small {
+    gap: 16px;
+}
+
+.gap-medium {
+    gap: 42px;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+footer {
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+@media (min-width: 900px) {
+    .mobile-only {
+        display: none !important;
+    }
+}

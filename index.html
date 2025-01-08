@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projekt Godset</title>
+        <script src="https://kit.fontawesome.com/c9d62a50e6.js" crossorigin="anonymous"></script>
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <i id="bars" class="fa-bars fa-solid"></i>
+            <a href=""><img src="img/godset-logo-hvid.svg" alt="godset logo hvid" class="logo"></a>
+            <nav>
+                <ul>
+                    <li class="col parent-list-item center">
+                        <a href="#tuneringen" onclick="toggleNav();"><span class="text-white">Turneringen</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#mød-youtuber" onclick="toggleNav();"><span class="text-white">Mød YouTuber</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#trygfonden" onclick="toggleNav();"><span class="text-white">Trygfonden</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#mød-cs-spiller" onclick="toggleNav();"><span class="text-white">Mød CS spiller</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#e-sport-forening" onclick="toggleNav();"><span class="text-white">E-Sport Foreninger</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#sponsor" onclick="toggleNav();"><span class="text-white">Sponsorer</span></a>
+                    </li>
+                    <li class="col parent-list-item center">
+                        <a href="#det-praktiske" onclick="toggleNav();"><span class="text-white">Det Praktiske</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row center gap-small">
+                <i id="toggle" class="fa-solid fa-toggle-on"></i>
+                <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header> 
+        
+        <main>
+            <section class="hero relative">
+                <div id="hero-text" class="absolute">
+                    <h1>BLIV</h1>
+                    <h3>EN DEL AF</h3>
+                    <h2>HOLDET</h2>
+                </div>
+                <img id="johnni" class="absolute" src="img/johnni.png" alt="">
+                <button id="hero-button" class="absolute dialog-trigger" data-dialog="enroll-cs-league">TILMELD CS TUNERINGEN</button>
+            </section>
+
+            <dialog id="enroll-cs-league">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>Tilmeld dig CS Tuneringen</h3> 
+                <label class="col center gap-small">
+                     <p>Der spilles i tre forskellige puljer. <br>
+                        <br>
+                        Første pulje (nybegynderne og amatørerne)
+                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 1000-10000 (svarer til Sølv 1 til og med Guld 4) <br>
+                        <br>
+                        Anden pulje (Øvede spillere)
+                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 11000-20000 (svarer til Master Guardian til og med Supreme)<br>
+                        <br>
+                        Tredje pulje (Eksperterne)
+                        Dem der skal melde sig med til denne pulje skal have en premier rank på 21000+ (Svarer til Global Elite)
+                    </p>
+                    <span>Vælg din rank</span>
+                    <select name="rank">
+                        <option value="1">Premier rank mellem 1000-10000 (svarer til Sølv 1 til og med Guld 4)</option>
+                        <option value="2">Premier rank mellem 11000-20000 (svarer til Master Guardian t.o.m Supreme)</option>
+                        <option value="3">Premier rank på 21000+ (Svarer til Global Elite)</option>
+                    </select>
+                </label>
+            </dialog>
+
+            <section id="tuneringen" class="row gap">
+                <article class="text-bubble w-60">
+                    <h4 class="text-center">Vind fede præmier</h4>
+                    <p>Mød andre spiller som elsker spillet ligeså meget som dig! Og kæmp dig hele vejen til de fedeste skins! <br>
+                        Alle kan være med uanset niveau. Hvis ikke du allerede har et hold, så finder vi et hold til dig.
+                        <br>
+                        <br>
+                        Der spilles i tre forskellige puljer. <br>
+                        <br>
+                        Første pulje (nybegynderne og amatørerne)
+                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 1000-10000 (svarer til Sølv 1 til og med Guld 4) <br>
+                        <br>
+                        Anden pulje (Øvede spillere)
+                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 11000-20000 (svarer til Master Guardian til og med Supreme)<br>
+                        <br>
+                        Tredje pulje (Eksperterne)
+                        Dem der skal melde sig med til denne pulje skal have en premier rank på 21000+ (Svarer til Global Elite)
+                    </p>
+                </article>
+                <div id="gun-list" class="flex center col">
+                    <img src="img/gun1.png" alt="">
+                    <img src="img/gun2.png" alt="">
+                    <img src="img/gun3.png" alt="">
+                </div>
+            </section>
+
+            <section id="mød-youtuber" class="hero relative">
+                <div id="hero-text" class="absolute">
+                    <h3>DIN KONFRENCE</h3>
+                    <h2>JOHNNI</h2>
+                    <h2>GADE</h2>
+                </div>
+                <img id="johnni" class="absolute" src="img/johnni-2.png" alt="">
+                <button id="hero-button" class="absolute">LÆS MERE OM JOHNNI</button>
+            </section>
+
+            <section id="trygfonden" class="col gap-small center sponsor-banner">
+                    <h3> Vi står sammen i kampen om ensomhed</h3>
+                    <img src="img/tryg-fonden-logo.png" alt="">
+            </section>
+
+            <section class="row gap">
+                <article class="text-bubble">
+                    <p>TrygFonden arbejder meget med at fremme tryghed og mental sundhed, hvilket passer perfekt til et Counter-Strike event for ensomme drenge. Gaming er en populær fritidsinteresse, der kan skabe fællesskab og hjælpe til at bekæmpe ensomhed. Et fysisk event som vores, giver deltagerne mulighed for at møde nye venner og styrke sociale relationer.</p>
+                    <div class="center">
+                        <button>LÆS MERE OM TRYGFONDEN</button>
+                    </div>
+                </article>
+            </section>
+
+            <section id="mød-cs-spiller" class="col gap-small">
+                <h3>Mød professionelle CS spiller</h3>
+                <div class="row gap-small">
+                        <img class="w-60" src="img/refresh.jpg" alt="">
+                    <article class="text-bubble">
+                        <p>Pro spiller, her er en tekst der skal laves om</p>
+                        <div class="center">
+                            <button>LÆS MERE</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="e-sport-forening" class="gap-small col">
+                <div class="center text-e-sport">
+                    <h3>Find en e-sport forening nær dig!</h3>
+                </div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="center">
+                                <img id="kolding-esport-logo" src="img/kolding-esport-logo.png" alt="">
+                            </td>
+                            <td class="center">
+                                <img id="middelfart-esport-logo" src="img/middelfart-esport-logo.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <p>Kolding E-Sport Forening</p>
+                            </td>
+                            <td class="center">
+                                <p>Middelfart E-Sport Forening</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="center">
+                                <button>LÆS MERE</button>
+                            </td>
+                            <td class="center">
+                                <button>LÆS MERE</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="sponsor" class="col gap-small center sponsor-banner">
+                <h3>Mød vores fantastiske sponsorer!</h3>
+                <div class="row center gap-small">
+                    <img src="img/firstgrade-logo.png" alt="">
+                    <img src="img/monster-logo.png" alt="">
+                    <img src="img/gamerpay-logo.png" alt="">
+                    <img src="img/redbull-lolo.png" alt="">
+                </div>
+            </section>
+
+            <section id="det-praktiske" class="col center gap-small">
+                <h3>Alt det praktiske!</h3>
+                <article class="text-bubble">
+                    <p>Skriv en tekst her om alt det praktiske der er, regler sted mm. .</p>
+                    <div class="center">
+                        <button>TILMELD CS TUNERINGEN</button>
+                    </div>
+                </article>
+            </section>
+
+        </main>
+
+    </body>
+</html>
