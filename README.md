@@ -1,1 +1,1 @@
-# godset.github.io
+# godset
