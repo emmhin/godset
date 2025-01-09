@@ -64,14 +64,23 @@
                 <label class="col center gap-small">
                      <p>Der spilles i tre forskellige puljer. <br>
                         <br>
-                        Første pulje (nybegynderne og amatørerne)
-                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 1000-10000 (svarer til Sølv 1 til og med Guld 4) <br>
+                        Mød andre spillere, der elsker spillet lige så meget som dig! Kæmp dig hele vejen til de fedeste skins!
+                        Alle kan være med, uanset niveau. Hvis du ikke allerede har et hold, så finder vi et hold til dig.
+                        <br>
+                        <br>
+                        Der spilles i tre forskellige puljer:
+                        <br>
+                        <br>    
+                        Første pulje (Nybegyndere og amatører)
+                        Denne pulje er for spillere med en premier rank mellem 1000-10.000 (svarer til Sølv 1 til og med Guld 4).
+                        <br>
                         <br>
                         Anden pulje (Øvede spillere)
-                        Dem der skal melde sig til denne pulje skal have en premier rank mellem 11000-20000 (svarer til Master Guardian til og med Supreme)<br>
+                        Denne pulje er for spillere med en premier rank mellem 11.000-20.000 (svarer til Master Guardian til og med Supreme).
+                        <br>
                         <br>
                         Tredje pulje (Eksperterne)
-                        Dem der skal melde sig med til denne pulje skal have en premier rank på 21000+ (Svarer til Global Elite)
+                        Denne pulje er for spillere med en premier rank på 21.000+ (svarer til Global Elite).
                     </p>
                     <span>Vælg din rank</span>
                     <select name="rank">
@@ -79,6 +88,7 @@
                         <option value="2">Premier rank mellem 11000-20000 (svarer til Master Guardian t.o.m Supreme)</option>
                         <option value="3">Premier rank på 21000+ (Svarer til Global Elite)</option>
                     </select>
+                    <button>Tilmeld</button>
                 </label>
             </dialog>
 
@@ -115,35 +125,75 @@
                     <h2>GADE</h2>
                 </div>
                 <img id="johnni" class="absolute" src="img/johnni-2.png" alt="">
-                <button id="hero-button" class="absolute">LÆS MERE OM JOHNNI</button>
+                <button id="hero-button" class="absolute dialog-trigger" data-dialog="enroll-johnni-gade">LÆS MERE OM JOHNNI</button>
             </section>
 
-            <section id="trygfonden" class="col gap-small center sponsor-banner">
+            <dialog id="enroll-johnni-gade">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>Hvem er Johnni Gade?</h3> 
+                <label class="gap-small">
+                     <p>Johnni Gade er en af Danmarks mest kendte YouTubere, der har markeret sig med en humoristisk, skarp og ofte grænsesøgende stil. Han har opbygget en stor følgerskare med sine videoer, der spænder bredt fra underholdende kommentarer på aktuelle emner til gaming, rap og skæve sketches.
+                        <br>
+                        <br>
+                        Johnni begyndte sin karriere som radiovært og freestyle-rapper, hvor hans kreative og humoristiske tilgang til kommunikation hurtigt gjorde ham populær. Han er særligt kendt for sit arbejde med satire og sine punchlines, der ofte leveres med en skarp kant. Hans evne til at balancere humor og social kommentar har gjort ham til en unik stemme i det danske mediebillede.
+                        <br>
+                        <br>
+                        På YouTube har Johnni Gade især gjort sig bemærket gennem sine gaming-videoer, rap battles og underholdende indhold, der ofte har en personlig vinkel. Han har skabt et brand, der taler til både unge og voksne, og hans autentiske stil har gjort ham til et forbillede for mange inden for dansk online underholdning.
+                        <br>
+                        <br>
+                        Udover sin YouTube-karriere har Johnni Gade også været vært for forskellige events og samarbejdet med brands og virksomheder, hvilket viser hans alsidighed som entertainer og indholdsproducent. Med sin skarpe humor, kreativitet og evne til at engagere sit publikum er han uden tvivl en af Danmarks mest markante profiler på de sociale medier.</p>
+                </label>
+            </dialog>
+
+            <section class="col gap-small center sponsor-banner">
                     <h3> Vi står sammen i kampen om ensomhed</h3>
                     <img src="img/tryg-fonden-logo.png" alt="">
             </section>
 
             <section class="row gap">
                 <article class="text-bubble">
-                    <p>TrygFonden arbejder meget med at fremme tryghed og mental sundhed, hvilket passer perfekt til et Counter-Strike event for ensomme drenge. Gaming er en populær fritidsinteresse, der kan skabe fællesskab og hjælpe til at bekæmpe ensomhed. Et fysisk event som vores, giver deltagerne mulighed for at møde nye venner og styrke sociale relationer.</p>
+                    <p>TrygFonden arbejder målrettet på at fremme tryghed og mental sundhed, hvilket gør dem til en perfekt samarbejdspartner for et Counter-Strike-event for ensomme drenge. Gaming er en populær fritidsinteresse, der skaber fællesskab og kan hjælpe med at bekæmpe ensomhed. Et fysisk event som vores giver deltagerne en unik mulighed for at møde nye venner og styrke deres sociale relationer.</p>
                     <div class="center">
-                        <button>LÆS MERE OM TRYGFONDEN</button>
+                        <button class="dialog-trigger" data-dialog="enroll-trygfonden">LÆS MERE OM TRYGFONDEN</button>
                     </div>
                 </article>
             </section>
+
+            <dialog id="enroll-trygfonden">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>TrygFonden og indsatsen mod ensomhed</h3> 
+                <label class="gap-small">
+                     <p>TrygFonden arbejder for et tryggere Danmark ved at støtte projekter, der fremmer sundhed, sikkerhed og trivsel. Et vigtigt fokusområde er ensomhed, som kan ramme både unge og ældre med alvorlige konsekvenser for mental og fysisk sundhed.
+                        <br>
+                        <br>
+                        Fonden støtter frivillige fællesskaber, projekter for udsatte unge og forskning, der skaber viden om ensomhedens årsager og løsninger. Gennem samarbejder med organisationer som Ældre Sagen og Red Barnet hjælper TrygFonden med at styrke sociale relationer og skabe fællesskaber, der gør en forskel i kampen mod ensomhed.</p>
+                </label>
+            </dialog>
 
             <section id="mød-cs-spiller" class="col gap-small">
                 <h3>Mød professionelle CS spiller</h3>
                 <div class="row gap-small">
                         <img class="w-60" src="img/refresh.jpg" alt="">
                     <article class="text-bubble">
-                        <p>Pro spiller, her er en tekst der skal laves om</p>
+                        <p>Ismail "Refresh" Ali er en dansk CS:GO-stjerne kendt for sin skarpe spilforståelse og evne til at levere under pres. En sand gamechanger på scenen!</p>
                         <div class="center">
-                            <button>LÆS MERE</button>
+                            <button class="dialog-trigger" data-dialog="enroll-refresh" >LÆS MERE</button>
                         </div>
                     </article>
                 </div>
             </section>
+
+            <dialog id="enroll-refresh">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>Hvem er Refresh?</h3> 
+                <label class="gap-small">
+                     <p>Refresh, med det borgerlige navn Ismail Ali, er en dansk professionel Counter-Strike-spiller, der har markeret sig som en talentfuld og dedikeret spiller på den internationale e-sports-scene. Kendt for sin strategiske tænkning og evne til at levere under pres, har Refresh spillet for flere anerkendte hold og opnået stor respekt i CS:GO-miljøet.
+                        <br>
+                        <br>
+                        Han har ikke kun vist sit værd i spillet, men også som en inspirator for unge gamere, der drømmer om at nå til tops. Refresh repræsenterer det ypperste inden for dansk e-sport og er et navn, man bør holde øje med i fremtiden.
+                    </p>
+                </label>
+            </dialog>
 
             <section id="e-sport-forening" class="gap-small col">
                 <div class="center text-e-sport">
@@ -169,15 +219,45 @@
                         </tr>
                         <tr>
                             <td class="center">
-                                <button>LÆS MERE</button>
+                                <button class="center dialog-trigger" data-dialog="enroll-kolding-esport">LÆS MERE</button>
                             </td>
                             <td class="center">
-                                <button>LÆS MERE</button>
+                                <button class="center dialog-trigger" data-dialog="enroll-middelfart-esport">LÆS MERE</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </section>
+
+            <dialog id="enroll-kolding-esport">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>Kolding Esport Forening</h3> 
+                <label class="gap-small">
+                     <p>Kolding Esport Forening er et samlingspunkt for gamere i alle aldre, hvor fællesskab, læring og konkurrence er i centrum. Foreningen tilbyder professionelle rammer for træning og udvikling inden for esport, med særligt fokus på populære spil som Counter-Strike, League of Legends og Fortnite.
+                        <br>
+                        <br>
+                        Her kan både nybegyndere og erfarne spillere få mulighed for at forbedre deres færdigheder, deltage i turneringer og møde andre med samme passion for gaming. Udover spiltræning lægger Kolding Esport vægt på sunde værdier som teamwork, respekt og socialt samvær.
+                        <br>
+                        <br>
+                        Foreningen er et stærkt fællesskab, der ikke kun handler om gaming, men også om at skabe nye venskaber og styrke ungdomskulturen i Kolding.
+                    </p>
+                </label>
+            </dialog>
+
+            <dialog id="enroll-middelfart-esport">
+                <button class="close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+                <h3>Middelfart Esport Forening</h3> 
+                <label class="gap-small">
+                     <p>Middelfart Esport Forening er et mødested for gamere i alle aldre, hvor passion for esport kombineres med fællesskab og personlig udvikling. Foreningen tilbyder træning i spil som Counter-Strike, Fortnite og League of Legends, og fokuserer på at skabe rammer for både konkurrence og socialt samvær.
+                        <br>
+                        <br>    
+                        Hos Middelfart Esport handler det ikke kun om at blive bedre til spillet, men også om at udvikle samarbejdsevner, fokus og disciplin. Foreningen lægger vægt på sunde værdier som respekt, teamwork og inklusion, og skaber et trygt miljø, hvor alle kan føle sig velkomne.
+                        <br>
+                        <br>
+                        Uanset om du er nybegynder eller erfaren spiller, er Middelfart Esport Forening stedet, hvor gaming møder fællesskab – og hvor venskaber vokser.
+                    </p>
+                </label>
+            </dialog>
 
             <section id="sponsor" class="col gap-small center sponsor-banner">
                 <h3>Mød vores fantastiske sponsorer!</h3>
